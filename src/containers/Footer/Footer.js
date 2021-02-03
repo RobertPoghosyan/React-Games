@@ -1,16 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 
 import Button from "../../components/Button/Button";
 
+import "./Footer.scss";
 
-
-const Footer = () => {
+class Footer extends Component {
+  render() {
     return (
-      <div className="app-footer">
-         <p>Made with ♥ in Melbourne, Australia by Peter Hanley</p> 
-        <Button className="app-footer_btn" > RULES </Button>
-      </div>
+      <footer>
+        <p>Made with ♥ in Melbourne, Australia by Peter Hanley</p>
+        <Button className="app-footer_btn">rules</Button>
+      </footer>
     );
-  };
-  
-  export default Footer;
+  }
+}
+
+export default Footer;

@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 
-import Header from "./containers/Header/Header";
+//import Header from "./containers/Header/Header";
 import Layout from "./components/Layout/Layout";
 import Footer from "./containers/Footer/Footer";
+import Game from "./containers/Game/Game";
 
-import './App.css';
-import Homepage from "./containers/Homepage/Homepage";
+import "./App.css";
 
 function App() {
-  const [score,setScore]=useState(0);
   return (
     <div className="App">
-      <Header score = {score}/>
+     
       <Layout>
-        <Homepage/>
+        <Game />
       </Layout>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
